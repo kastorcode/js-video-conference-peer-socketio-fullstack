@@ -1,0 +1,10 @@
+{
+  "name": "js-video-conference-peer-server",
+  "scripts": {
+    "dev": "PORT=9000 CERT=~/.ssl/cert.pem KEY=~/.ssl/key.pem npm start",
+    "start": "npx peerjs --port $PORT --path / --sslcert=$CERT --sslkey=$KEY"
+  },
+  "dependencies": {
+    "peer": "^0.6.1"
+  }
+}

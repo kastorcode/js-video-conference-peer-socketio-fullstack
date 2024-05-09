@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+:root {
+  --fontSize: 16px;
+  --textColor: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  color: var(--textColor);
+  font-family: 'Poetsen One', sans-serif;
+  font-size: var(--fontSize);
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+a {
+  transition-duration: 0.1s;
+}
+
+a:hover {
+  background-color: rgba(0,0,0,0.3);
+  border-radius: var(--fontSize) 0;
+  cursor: pointer;
+  padding: calc(var(--fontSize) / 2);
+}
+
+body {
+  align-items: center;
+  background: linear-gradient(45deg, #595bc1 0%, #8b59c1 100%);
+  display: flex;
+  flex-direction: column;
+  height: 100svh;
+  justify-content: center;
+  width: 100%;
+}
+
+footer {
+  bottom: 0;
+  padding: var(--fontSize);
+  position: fixed;
+}
+
+#join {
+  padding: calc(var(--fontSize) / 2) var(--fontSize);
+  transition-duration: 0.3s, 0.6s;
+  transition-property: background-color, border-radius;
+}
+
+#join:active {
+  border-radius: calc(var(--fontSize) * 2) !important;
+  transition-duration: 0.1s;
+}
+
+#join:hover {
+  background-color: rgba(0,0,0,0.3);
+  border-radius: var(--fontSize) 0;
+  cursor: pointer;
+}
+
+#join p {
+  font-size: calc(var(--fontSize) * 2);
+}
+
+#join svg {
+  max-width: 192px;
+  width: 100%;
+}
+
+section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}

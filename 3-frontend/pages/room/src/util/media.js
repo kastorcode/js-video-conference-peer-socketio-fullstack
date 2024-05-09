@@ -1,0 +1,9 @@
+class Media {
+
+  getCamera (audio = true, video = true) {
+    return navigator.mediaDevices.getUserMedia({
+      audio, video
+    })
+  }
+
+}

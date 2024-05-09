@@ -1,0 +1,11 @@
+{
+  "name": "js-video-conference-frontend",
+  "version": "1.0.0",
+  "author": "<kastor.code/> Matheus Ramalho de Oliveira",
+  "scripts": {
+    "start": "npx http-server --cors --ssl --cert ~/.ssl/cert.pem --key ~/.ssl/key.pem ."
+  },
+  "dependencies": {
+    "http-server": "0.12.3"
+  }
+}

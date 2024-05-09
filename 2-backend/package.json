@@ -1,0 +1,17 @@
+{
+  "name": "js-video-conference-backend",
+  "version": "1.0.0",
+  "author": "<kastor.code/> Matheus Ramalho de Oliveira",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx nodemon index.js",
+    "start": "node index.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "socket.io": "^3.0.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

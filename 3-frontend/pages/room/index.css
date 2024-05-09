@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+:root {
+  --fontSize: 16px;
+  --fontSizeD2: calc(var(--fontSize) / 2);
+  --primaryColor: #7159c1;
+  --secondaryColor: #e3170f;
+  --textColor: #ffffff;
+}
+
+* {
+  border: 0;
+  box-sizing: border-box;
+  color: var(--textColor);
+  font-family: 'Poetsen One', sans-serif;
+  font-size: var(--fontSize);
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.active > * {
+  color: var(--secondaryColor);
+  fill: var(--secondaryColor);
+}
+
+body {
+  align-items: center;
+  background-color: #05030a;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 100svh;
+  width: 100%;
+}
+
+button {
+  background-color: var(--primaryColor);
+  display: flex;
+  padding: 4px 12px;
+  transition-duration: 0.1s;
+}
+
+button:hover {
+  box-shadow: 0 0 10px var(--primaryColor);
+  cursor: pointer;
+}
+
+#controls {
+  background-color: #0a0714;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: var(--fontSizeD2) var(--fontSize);
+  position: fixed;
+  width: 100%;
+}
+
+#controls div {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+#controls svg {
+  margin-right: calc(var(--fontSize) / 4);
+  max-width: calc(var(--fontSize) + 4px);
+  width: 100%;
+}
+
+#record:hover {
+  cursor: pointer;
+}
+
+#record:hover span {
+  color: var(--primaryColor);
+}
+
+video {
+  margin-bottom: 2px;
+  max-height: 240px;
+  width: 100%;
+}
+
+#video-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: var(--fontSizeD2);
+  padding-bottom: calc(var(--fontSize) * 4);
+  width: 100%;
+}
+
+#video-grid .wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: var(--fontSize);
+  max-width: 320px;
+  width: 100%;
+}
+
+#video-grid .wrapper > * {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+}
